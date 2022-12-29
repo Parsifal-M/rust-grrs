@@ -16,10 +16,13 @@ fn main() {
     let args = Cli::parse();
     let content = std::fs::read_to_string(&args.path)
         .with_context(|| format!("could not read file `{}`", args.path.display()));
+    let mut count = 0;
 
     for line in content.expect("REASON").lines() {
         if line.contains(&args.pattern) {
             println!("{}", line);
+            count += 1;
         }
     }
+    println!("Found {} times", count);
 }
