@@ -3,6 +3,10 @@ kind: Resource
 metadata:
   name: rust-grrs
   description: Rust CLI tool to search for a string in a file and display the lines that contain it
+  links:
+    - url: https://github.com/Parsifal-M/rust-grrs
+      title: Repository
+      icon: github
   # Example for optional annotations
   # annotations:
   #   github.com/project-slug: backstage/backstage
@@ -10,4 +14,4 @@ metadata:
 spec:
   type: website
   owner: Peter Macdonald
-  lifecycle: sandbox
+  lifecycle: Sandbox
