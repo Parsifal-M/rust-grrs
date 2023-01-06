@@ -8,8 +8,8 @@ metadata:
       title: Repository
       icon: github
   # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
+  annotations:
+    github.com/project-slug: Parsifal-M/rust-grrs
   #   backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
